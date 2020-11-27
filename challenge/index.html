@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+    <head>
+        <title>Challenge</title>
+        <link rel="stylesheet" href="../main.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <li class="logo"><a href="index"></a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://github.com/upitroma">Github</a></li>
+                    <li><a href="./index.html">Challenge</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <header class="home">
+            The Challenge.
+            </header>
+            <a class="mybutton" href="#about">Yes, this is a CTF.</a>
+        </section>
+
+        <section class="par" id="about">
+            <header>
+                The Challenge:
+            </header>
+            <nav>
+                I couldn't resist putting secrets in my own website <br>
+                There are many flags hidden throughout this site. <br>
+                See how many you can find. The format is ALN{this-is-flag}. <br>
+                Submit flags by typing checkFlag("ALN{FLAG}") in the console. <br>
+                <!--ALN{flag1_9176248}-->
+                Good luck. <br>
+            </nav>
+        </section>
+
+        <script src="https://geraintluff.github.io/sha256/sha256.min.js"></script>
+        <script>
+            //Validates flags
+            var flagHashes=[
+                "ef108965af8ca2c44aac65adf4c3eb8985ebe9ae12ed67f7d293abb0060d4da3",
+                "0622cde5a0b81b9260e96bcf5e6ee1d5db49724a0add61dce09395b272ba9ecd",
+                "9772dd4afb941bb9359609139e15d0c79a7276aa07f71e5faacf5ad46bf857b9"
+            ]
+            function checkFlag(s){
+                console.log(sha256(s))
+                if(flagHashes.includes(sha256(s))){
+                    console.log("You found a flag!")
+                }
+                else{
+                    console.log("Invalid flag.")
+                }
+            }
+        </script>
+
+        <footer>Website template shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
+    </body>
+</html>
