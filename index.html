@@ -7,8 +7,43 @@
     <head>
         <title>Allen</title>
         <link rel="stylesheet" href="./main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+        <canvas class="background" style="z-index: -1;" id="particles"></canvas>
+        <script>
+            
+
+            window.onload = function() {
+                startParticles()
+            };
+            async function resizeCanvas(){
+                var can = document.getElementById("particles");
+                console.log(can.style.height + " " + document.documentElement.scrollHeight)
+
+                can.style.height = document.documentElement.scrollHeight + "px";
+
+
+                console.log(can.style.height + " " + document.documentElement.scrollHeight)
+
+            }
+
+            async function startParticles(){
+
+                Particles.init({
+                    selector: '.background',
+                    color: '#dddddd',
+                    connectParticles: true
+                });
+            }
+
+            
+
+        </script>
     </head>
-    <body>
+    <body">
+        
+
+        
+
         <header>
             <nav>
                 <ul class="topnav">
@@ -22,7 +57,7 @@
         </header>
 
         <section>
-            <header class="home">
+            <header class="home" style="color: white">
             Student, Coder, Eagle Scout.
             </header>
             <a class="mybutton" href="#about">Learn more about me.</a>
@@ -33,7 +68,7 @@
                 Hi!
             </header>
             <nav>
-                My name is Allen, I'm a computer nerd and aspiring game dev. <br>
+                I'm Allen, I'm a computer nerd and aspiring game dev. <br>
                 I'm currently studying Software Engineering at Indiana Tech, <br>
                 as well as competing in the Indiana Tech Cyber Warriors team. <br>
                 I enjoy gaming, coding, and camping.
@@ -46,5 +81,13 @@
         </section>
 
         <footer>Website template shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
+
+
+
+        
+
+
     </body>
+
+
 </html>
