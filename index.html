@@ -8,27 +8,15 @@
         <title>Allen</title>
         <link rel="stylesheet" href="./main.css">
 
-        <!--upgrade to tsParticles?-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-        <canvas class="background" style="z-index: -1;" id="particles"></canvas>
-        <script>
-            window.onload = function() {
-                startParticles()
-            };
-
-            function startParticles(){
-
-                Particles.init({
-                    selector: '.background',
-                    color: '#dddddd',
-                    connectParticles: true
-                });
-            }
-        </script>
+        <!--upgraded to tsParticles-->
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.19.1/dist/tsparticles.min.js"></script>
+        
 
 
     </head>
     <body">
+
+        <div id="tsparticles" class=".background" style="z-index: -1;"></div>
         
 
         
@@ -77,6 +65,8 @@
 
 
     </body>
+
+    <script src="./tsParticlesTest.js"></script>
 
 
 </html>
