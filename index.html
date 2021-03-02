@@ -10,23 +10,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
         <canvas class="background" style="z-index: -1;" id="particles"></canvas>
         <script>
-            
-
             window.onload = function() {
                 startParticles()
             };
-            async function resizeCanvas(){
-                var can = document.getElementById("particles");
-                console.log(can.style.height + " " + document.documentElement.scrollHeight)
 
-                can.style.height = document.documentElement.scrollHeight + "px";
-
-
-                console.log(can.style.height + " " + document.documentElement.scrollHeight)
-
-            }
-
-            async function startParticles(){
+            function startParticles(){
 
                 Particles.init({
                     selector: '.background',
@@ -34,9 +22,6 @@
                     connectParticles: true
                 });
             }
-
-            
-
         </script>
     </head>
     <body">
@@ -57,7 +42,7 @@
         </header>
 
         <section>
-            <header class="home" style="color: white">
+            <header class="home">
             Student, Coder, Eagle Scout.
             </header>
             <a class="mybutton" href="#about">Learn more about me.</a>
@@ -80,7 +65,7 @@
             </ul>
         </section>
 
-        <footer>Website template shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
+        <footer>Website idea shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
 
 
 

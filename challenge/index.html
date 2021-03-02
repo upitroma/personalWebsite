@@ -7,6 +7,22 @@
     <head>
         <title>Challenge</title>
         <link rel="stylesheet" href="../main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+        <canvas class="background" style="z-index: -1;" id="particles"></canvas>
+        <script>
+            window.onload = function() {
+                startParticles()
+            };
+
+            function startParticles(){
+
+                Particles.init({
+                    selector: '.background',
+                    color: '#dddddd',
+                    connectParticles: true
+                });
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -61,6 +77,6 @@
             }
         </script>
 
-        <footer>Website template shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
+        <footer>Website idea shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
     </body>
 </html>

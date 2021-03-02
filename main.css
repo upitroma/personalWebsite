@@ -49,7 +49,12 @@ a:hover {
     color: #ff7a7a;
 }
 
-header .logo a {
+
+header{
+    color: white;
+}
+
+.logo a {
 	background-image: url("../images/logo.png");
 	background-size: 90px;
 	background-repeat: no-repeat;
@@ -170,6 +175,7 @@ section .mybutton:hover {
 .par {
     margin-top: 500px;
     height: 650px;
+    color: rgb(226, 226, 226);
 }
 
 footer {
