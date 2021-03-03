@@ -3,7 +3,7 @@
 tsParticles.load("tsparticles", {
   fpsLimit: 60,
   background: {
-    color: "#000000"
+    color: "#0f0f0f"
   },
   backgroundMode: {
     enable: true
@@ -13,17 +13,32 @@ tsParticles.load("tsparticles", {
       value: "#ffffff"
     },
     links: {
-      color: "#ffffff",
-      enable: true
+      color: "#6e6e6e",
+      enable: true,
+      triangles: {
+        enable: false
+      },
+      distance: 120,
     },
     move: {
       enable: true,
       speed: 1
     },
     size: {
-      value: 2,
+      value: 0,
       
     },
-    
+    collisions: {
+        "enable": false
+    },
+    number: {
+        density: {
+          enable: true,
+          area: 800,
+          factor: 1200
+        },
+        limit: 0,
+        value: 100
+      },
   }
 });
