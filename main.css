@@ -1,6 +1,6 @@
 /*ALN{flag3_9276027}*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 html {
     scroll-behavior: smooth;
@@ -79,7 +79,7 @@ li {
 
 .topnav {
     list-style: none;
-    font-family: 'Roboto Thin';
+    font-family: 'Source Code Pro';
     color: aliceblue;
     margin: 50px 0 0 0;
     text-align: right;
@@ -87,7 +87,7 @@ li {
 
 section header {
     margin-top: 0px;
-    font-family: 'Roboto Thin';
+    font-family: 'Source Code Pro';
     font-size: 62px;
     margin-bottom: 20px;
 }
@@ -106,7 +106,7 @@ section {
 }
 
 section nav {
-    font-family: 'Roboto Thin';
+    font-family: 'Source Code Pro';
     font-size: 36px;
     line-height: 55px;
     text-align: left;
@@ -116,7 +116,7 @@ section nav {
 }
 
 section .mybutton {
-    font-family: 'Roboto';
+    font-family: 'Source Code Pro';
     font-size: 24px;
     color: #151D21;
     background: #ff8e31;
@@ -156,7 +156,7 @@ figure img:hover {
 }
 
 figure figcaption {
-    font-family: 'Roboto Black';
+    font-family: 'Source Code Pro';
     font-size: 36px;
     margin-top: 10px;
     margin-bottom: 100px;
@@ -179,7 +179,7 @@ section .mybutton:hover {
 }
 
 footer {
-    font-family: 'Roboto Thin';
+    font-family: 'Source Code Pro';
     text-align: center;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -190,7 +190,7 @@ footer {
 
 @media screen and (max-width: 1140px) {
     section nav {
-        font-family: 'Roboto Thin';
+        font-family: 'Source Code Pro';
         font-size: 24px;
         line-height: 36px;
         text-align: left;
@@ -217,7 +217,7 @@ footer {
     }    
 
     figure figcaption {
-        font-family: 'Roboto Black';
+        font-family: 'Source Code Pro';
         font-size: 24px;
         margin-top: 10px;
         margin-bottom: 100px;
