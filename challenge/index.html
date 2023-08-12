@@ -7,32 +7,18 @@
     <head>
         <title>Challenge</title>
         <link rel="stylesheet" href="../main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-        <canvas class="background" style="z-index: -1;" id="particles"></canvas>
-        <script>
-            window.onload = function() {
-                startParticles()
-            };
-
-            function startParticles(){
-
-                Particles.init({
-                    selector: '.background',
-                    color: '#dddddd',
-                    connectParticles: true
-                });
-            }
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.19.1/dist/tsparticles.min.js"></script>
     </head>
     <body>
+        <div id="tsparticles" class=".background" style="z-index: -1;"></div>
         <header>
             <nav>
                 <ul class="topnav">
                     <li class="logo"><a href="index"></a></li>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="https://github.com/upitroma">Github</a></li>
-                    <li><a href="./index.html">Challenge</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact</a></li>
+                    <li><a href=".">Challenge</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -79,4 +65,5 @@
 
         <footer>Website idea shamelessly stolen from <a href="https://www.danidev.net/">https://www.danidev.net/</a>.</footer>
     </body>
+    <script src="../tsParticlesTest.js"></script>
 </html>
