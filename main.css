@@ -54,17 +54,6 @@ header{
     color: white;
 }
 
-.logo a {
-	background-image: url("../images/logo.png");
-	background-size: 90px;
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 100px;
-	width: 111px;
-	text-indent: -999999px;
-	position: relative;
-    top: -15px;
-}
 
 li:first-child {
     float: left; 
@@ -106,6 +95,18 @@ section {
 }
 
 section nav {
+    font-family: 'Source Code Pro';
+    font-size: 36px;
+    line-height: 55px;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section div {
+    position:relative;
+    color: aliceblue;
     font-family: 'Source Code Pro';
     font-size: 36px;
     line-height: 55px;
@@ -176,6 +177,11 @@ section .mybutton:hover {
     margin-top: 500px;
     height: 650px;
     color: rgb(226, 226, 226);
+}
+
+.contacts {
+    color: rgb(226, 226, 226);
+    flex-direction: row;
 }
 
 footer {
