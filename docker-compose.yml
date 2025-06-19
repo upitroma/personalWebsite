@@ -1,0 +1,13 @@
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d/:ro
+    ports:
+      - 80:80
+  api:
+    build: api
+  static:
+    image: httpd:alpine
+    volumes:
+      - ./static/:/usr/local/apache2/htdocs/:ro
