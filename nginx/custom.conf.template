@@ -1,9 +1,9 @@
-map $http_user_agent $backend {
-    default       "static";
-    "~*curl"      "flask";
+map "$http_x_key" $backend {
+    default                          "static";
+    "API_KEY"                         "api";
 }
 
-upstream flask {
+upstream api {
     server api:8080;
 }
 
